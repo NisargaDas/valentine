@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikhil 💖 Nisarga</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      overflow-x: hidden;
+      text-align: center;
+      color: #2b2b2b;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.88);
+      padding: 25px;
+      border-radius: 22px;
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+      margin-top: 20px;
+    }
+
+    .funny-text {
+      font-size: 1.2rem;
+      line-height: 1.7;
+    }
+
+    .reasons {
+      text-align: left;
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+
+    .reasons li {
+      margin: 10px 0;
+    }
+
+    /* Heaven wedding image */
+    .heaven-img {
+      width: 100%;
+      max-width: 520px;
+      border-radius: 22px;
+      margin-top: 18px;
+      box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.25);
+      border: 4px solid rgba(255, 255, 255, 0.7);
+    }
+
+    .caption {
+      margin-top: 12px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #ff2d55;
+    }
+
+    .btns {
+      margin-top: 25px;
+    }
+
+    button {
+      font-size: 1.2rem;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      margin: 10px;
+    }
+
+    .yes-btn {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    .yes-btn:hover {
+      transform: scale(1.1);
+      background: #ff2d55;
+    }
+
+    .no-btn {
+      background: #444;
+      color: white;
+      position: relative;
+    }
+
+    #message {
+      font-size: 1.3rem;
+      margin-top: 25px;
+      font-weight: bold;
+      color: #ff2d55;
+    }
+
+    /* Floating hearts animation */
+    .heart {
+      position: fixed;
+      bottom: -10px;
+      font-size: 20px;
+      animation: floatUp 6s linear infinite;
+      opacity: 0.7;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-110vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Hey Nikhil 😌💖</h1>
+    <p class="funny-text">
+      Welcome to your <b>official Valentine Website</b> 😎✨<br />
+      (Yes, I made a whole website just to tell you I love you... so you better appreciate it 😤💘)
+    </p>
+
+    <div class="card">
+      <h2>💌 A Cute + Funny Love Note</h2>
+      <p class="funny-text">
+        Dear Nikhil,<br /><br />
+        I just want to tell you something very important...<br />
+        You are my favorite human 🥺❤️  
+        Also my favorite headache sometimes 😭🤣<br /><br />
+        But honestly, you make my life sweeter, funnier, and more special.
+        If love was WiFi, you’d be the strongest signal 😌📶💘
+        <br /><br />
+        Love,<br />
+        <b>Nisarga 💕</b>
+      </p>
+    </div>
+
+    <!-- NEW SECTION: Heaven Marriage -->
+    <div class="card">
+      <h2>🌸 Our Heaven Marriage ✨</h2>
+      <p class="funny-text">
+        Nikhil… I don’t know why but I feel like our love is not just from this life 🥺💖<br />
+        It feels like we were written by destiny… and married in heaven 😭✨
+      </p>
+
+      <img src="heaven-marriage.jpg" alt="Nikhil and Nisarga married in heaven" class="heaven-img" />
+
+      <div class="caption">
+        “In every universe… it’s always you & me.” 💍🌙💖
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>✨ Reasons I Love You</h2>
+      <ul class="reasons">
+        <li>1. You make me smile even when I’m angry 😤➡️😄</li>
+        <li>2. You are cute (even when you act like you’re not) 😌</li>
+        <li>3. You support me and I feel safe with you 💗</li>
+        <li>4. You’re my favorite person to talk to 🥺</li>
+        <li>5. You’re literally my Valentine forever vibes 😭❤️</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>💘 Final Question</h2>
+      <p class="funny-text">
+        Nikhil... will you be my Valentine? 😳💖
+      </p>
+
+      <div class="btns">
+        <button class="yes-btn" onclick="sayYes()">YES 💕</button>
+        <button class="no-btn" id="noBtn" onmouseover="moveNo()">NO 😭</button>
+      </div>
+
+      <div id="message"></div>
+    </div>
+
+    <footer>
+      Made with love + little drama 😌💘 by Nisarga
+    </footer>
+  </div>
+
+  <script>
+    // Floating hearts
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "💖";
+
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = Math.random() * 20 + 15 + "px";
+      heart.style.animationDuration = Math.random() * 3 + 4 + "s";
+
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+    setInterval(createHeart, 300);
+
+    // Yes button
+    function sayYes() {
+      document.getElementById("message").innerHTML =
+        "YAYYYYY 😭💖💖💖<br>Okay Nikhil, now you are officially my Valentine 😌🌹<br>Love you soooo much! 💕";
+    }
+
+    // No button runs away
+    function moveNo() {
+      const noBtn = document.getElementById("noBtn");
+      const x = Math.random() * (window.innerWidth - 150);
+      const y = Math.random() * (window.innerHeight - 100);
+      noBtn.style.position = "absolute";
+      noBtn.style.left = x + "px";
+      noBtn.style.top = y + "px";
+    }
+  </script>
+</body>
+</html>
